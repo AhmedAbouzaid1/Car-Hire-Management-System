@@ -43,7 +43,7 @@ CREATE TABLE Payment (
 );
 
 DELIMITER $$
-CREATE TRIGGER tr_remove_overlapping_bookings
+CREATE TRIGGER Remove_overlapping_bookings
 BEFORE INSERT ON Booking
 FOR EACH ROW
 BEGIN
@@ -58,8 +58,8 @@ BEGIN
         SIGNAL SQLSTATE '45000'
         SET MESSAGE_TEXT = 'Booking overlaps with existing bookings';
     END IF;
-END$$
-DELIMITER ;
+END
+$$ DELIMITER ;
 
 
 -- Insert data for Customer table
