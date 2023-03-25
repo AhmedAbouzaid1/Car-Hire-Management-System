@@ -93,5 +93,5 @@ DO CALL generate_daily_report();
 
 This event is scheduled to run every day at midnight starting from 2023-03-26. You can adjust the STARTS parameter to schedule the event to start on a different date or time. When the event runs, it will execute the generate_daily_report() stored procedure and output the result to the console. You can also modify the stored procedure to store the report in a table or file if you prefer.
 
-Conclusion:
+# Conclusion:
 The Car Hire Management System is a comprehensive solution for managing a car rental business. It provides all the necessary functionalities to manage the customers, bookings, and vehicles. The system is developed using the Flask microframework and MySQL database, making it easy to use and maintain.
